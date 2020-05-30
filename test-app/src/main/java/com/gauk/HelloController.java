@@ -1,0 +1,20 @@
+package com.gauk;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping(value = "/test-api")
+public class HelloController {
+	
+	@Value("${application.message:Not configured by a Spring Cloud Server}")
+    private String message;
+	
+	@GetMapping("/test")
+	public String test() {
+		return message;
+	}
+	
+}

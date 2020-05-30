@@ -1,0 +1,5 @@
+package com.gauk;
+
+public class CouponRepository  extends JpaRepository<Coupon, Long>{
+
+}

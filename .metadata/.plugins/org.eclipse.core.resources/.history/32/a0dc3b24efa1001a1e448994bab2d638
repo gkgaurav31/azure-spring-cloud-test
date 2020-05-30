@@ -1,0 +1,10 @@
+package com.gauk;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController(value = "/coupon-api")
+public class CouponRestController {
+
+	
+	
+}

@@ -1,0 +1,13 @@
+package com.gauk;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@FeignClient("zuul-api-gateway")
+public interface CouponClient {
+	
+	@RequestMapping(value = "/coupon-api/coupon/{code}")
+	Coupon getCoupon(@PathVariable("code") String code);
+
+}	

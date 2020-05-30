@@ -1,0 +1,8 @@
+package com.gauk;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public class CouponRepository  extends JpaRepository<Coupon, Long>{
+
+}

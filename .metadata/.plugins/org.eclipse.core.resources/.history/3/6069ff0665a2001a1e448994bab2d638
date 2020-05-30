@@ -1,0 +1,7 @@
+spring.application.name=COUPON-SERVICE
+spring.datasource.url=jdbc:mysql://gaukmysql.mysql.database.azure.com:3306/testdb?serverTimezone=UTC
+spring.datasource.username=gauk@gaukmysql
+spring.datasource.password=HelloWorld123
+server.port=0
+eureka.instance.instance-id=${spring.application.name}:${spring.application.instance_id:${random.value}}
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
